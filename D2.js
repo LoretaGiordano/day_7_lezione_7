@@ -34,11 +34,10 @@ console.log('8 è uguale a 5? ', risultato)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num3 = 25 % 5
-let num4 = 0
+let num3 = 25
 let risultatoDef
 let divisibile = 'divisibile per 5'
-if (num3 === num4) {
+if (num3 % 5 === 0) {
   risultatoDef = divisibile
 }
 console.log('25 è ', risultatoDef)
@@ -118,24 +117,41 @@ console.log('il carrello finale sarà di ', carrelloFinale2)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('il typeoff di 888 è ', typeof 888)
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let numero6 = 54
+if (numero6 % 2 === 0) {
+  console.log(numero6 + ' è un numero pari.')
+} else {
+  console.log(numero6 + ' è un numero dispari.')
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+let val = 7
+if (val < 10) {
+  console.log('Meno di 10')
+} else if (val < 5) {
+  console.log('Meno di 5')
+} else {
+  console.log('Uguale a 10 o maggiore')
+}*/
+let val1 = 7
+let val2 = 4
+let val3 = 11
+if (val1 < 10) {
+  console.log('Meno di 10')
+} else if (val2 < 5) {
+  console.log('Meno di 5')
+} else val3 >= 10
+{
+  console.log('Uguale a 10 o maggiore')
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -143,13 +159,14 @@ console.log('il carrello finale sarà di ', carrelloFinale2)
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
+/* SCRIVI QUI LA TUA RISPOSTA */
 const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = 'Toronto'
+console.log("me dopo l'aggiunta di city", me)
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
